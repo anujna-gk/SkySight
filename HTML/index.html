@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+</head>
+<body>
+        <h2> Welcome to Skysight, a weather App</h2>
+        
+        <form action="/Users/anujna-gk/weather-project/javascript/windex.js" method="get">
+        <div id="location_options">
+            <p> Select your Location :</p>
+            <input type="radio" name="location" id="c1" value="Bengaluru">
+            <label for="c1">Bengaluru</label>
+            <input type="radio" name="location" id="c2" value="Mumbai">
+            <label for="c2">Mumbai</label>
+            <input type="radio" name="location" id="c3" value="Chennai">
+            <label for="c3">Chennai</label>
+            <input type="radio" name="location" id="c4" value="New Delhi">
+            <label for="c4">New Delhi</label>
+        </div>
+
+        <div id="weather_options" class="hhh">    
+            <p> Choose what you want to know below :</p>
+        <div class="buttonsofweather">
+            <div><input type="button" name="check temp" id="temp" value="Temperature"></div>
+            <div> <input type="button" name="check hum" id="hum" value="Humidity"> </div>
+            <div><input type="button" name="check temp" id="aqi" value="AQI"> </div>
+           <div> <input type="button" name="check temp" id="uvi" value="UV index"></div>
+        </div>
+        </div>
+
+    </form>
+
+    <style>
+        body{
+            background-image: url("https://images.pexels.com/photos/531767/pexels-photo-531767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+            background-repeat: no-repeat;
+            height: 100%;
+            background-size: cover;
+        }
+        h2 {
+            color: white;
+            margin-left: 300px;
+            font-size: 60px;
+            
+        }
+        #location_options{
+            color: white;
+            margin-left: 500px;
+            font-size: x-large;
+            padding: 25px;
+        }
+        #weather_options{
+            color: white;
+            margin-left: 500px;
+            font-size: x-large;
+            padding: 25px;
+        }
+        #temp , #hum, #aqi, #uvi{
+            padding: 7px;
+            margin: 7px;
+            border-radius: 12px;
+            border-color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    
+
+    </style>
+</body>
+</html>
